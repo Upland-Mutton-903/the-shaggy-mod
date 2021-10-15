@@ -41,11 +41,11 @@ class StoryMenuState extends MusicBeatState
 	var weekCharacters:Array<Dynamic> = [
 		['shaggy', 'bf', 'gf'],
 		['shaggy', 'bf', 'gf'],
-		['pshaggy', 'bf', 'gf'],
-		['shaggymatt', 'bf', 'gf'],
-		['rshaggy', 'bf', 'gf'],
-		['wbshaggy', 'bf', 'gf'],
-		['', 'bf', 'gf']
+		['shaggy', 'bf', 'gf'],
+		['shaggy', 'bf', 'gf'],
+		['shaggy', 'bf', 'gf'],
+		['shaggy', 'bf', 'gf'],
+		['shaggy', 'bf', 'gf']
 	];
 
 	//The week's name, displayed on top-right
@@ -56,17 +56,17 @@ class StoryMenuState extends MusicBeatState
 		"Cruel revelation",
 		"Bonus match",
 		"Special Kombat with the third of his kind",
-		"BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+		"B"
 	];
 
 	//Background asset name, the background files are stored on assets/preload/menubackgrounds/
 	var weekBackground:Array<String> = [
-		'halloween',		
-		'halloween',
-		'sky',
-		'boxin',
-		'outside',
-		'lava',
+		'blank',		
+		'blank',
+		'blank',
+		'blank',
+		'blank',
+		'blank',
 		'blank'
 	];
 	
@@ -381,10 +381,10 @@ class StoryMenuState extends MusicBeatState
 		{
 			switch (curWeek)
 			{
-				case 3:
-					CoolUtil.browserLoad('https://gamejolt.com/games/fnf-shaggy-matt/648032');
-				case 6:
-					MusicBeatState.switchState(new MASKstate());
+				//case 3:
+				//	CoolUtil.browserLoad('https://gamejolt.com/games/fnf-shaggy-matt/648032');
+				//case 6:
+				//	MusicBeatState.switchState(new MASKstate());
 				default:
 					trace(curDifficulty, WeekData.maniaSongs[curWeek]);
 					if (curDifficulty != 0 || WeekData.maniaSongs[curWeek][0] != '')
