@@ -36,6 +36,13 @@ class Main extends Sprite
 		[0, 2, 3, 4, 0, 1, 3],
 		[0, 1, 2, 3, 4, 0, 1, 2, 3]
 	];
+	// 0-3 bf, 4-7 bf2, 8 both (up)
+	public static var bfxHud:Array<Dynamic> = [
+		[0, 1, 2, 3],
+		[0, 2, 3, 4, 6, 7],
+		[0, 2, 3, 8, 4, 6, 7],
+		[0, 1, 2, 3, 8, 4, 5, 6, 7]
+	];
 	public static var gfxAlterInd:Array<Dynamic> = [
 		[2, 3, 3, 2],
 		[0, 1, 2, 2, 1, 0],
