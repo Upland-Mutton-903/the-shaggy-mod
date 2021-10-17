@@ -4213,7 +4213,85 @@ class PlayState extends MusicBeatState
 			{
 				boyfriend.stunned = false;
 			});*/
-			boyfriend.playAnim('sing' + Main.charDir[Main.gfxHud[mania][direction]] + 'miss', true);
+			//boyfriend.playAnim('sing' + Main.charDir[Main.gfxHud[mania][direction]] + 'miss', true);
+			switch(mania)
+						{
+							case 0: // 4k
+								switch (direction)
+					{
+							
+						case 2:
+							boyfriend2.playAnim('singUPmiss', true);
+						case 3:
+							boyfriend2.playAnim('singRIGHTmiss', true);
+						case 1:
+							boyfriend.playAnim('singDOWNmiss', true);
+						case 0:
+							boyfriend.playAnim('singLEFTmiss', true);
+					}	
+							case 1: // 6k
+								switch (direction)
+					{
+							
+						case 0:
+							boyfriend.playAnim('singLEFTmiss', true);
+						case 1:
+							boyfriend.playAnim('singDOWNmiss', true);
+						case 2:
+							boyfriend.playAnim('singRIGHTmiss', true);
+						case 3:
+							boyfriend2.playAnim('singLEFTmiss', true);
+						case 4:
+							boyfriend2.playAnim('singUPmiss', true);
+						case 5:
+							boyfriend2.playAnim('singRIGHTmiss', true);
+					}	
+							case 2: // 7k
+								switch (direction)
+					{
+							
+						case 0:
+							boyfriend.playAnim('singLEFTmiss', true);
+						case 1:
+							boyfriend.playAnim('singUPmiss', true);
+						case 2:
+							boyfriend.playAnim('singRIGHTmiss', true);
+						case 3:
+							boyfriend.playAnim('singUPmiss', true);
+							boyfriend2.playAnim('singUPmiss', true);
+						case 4:
+							boyfriend2.playAnim('singLEFTmiss', true);
+						case 5:
+							boyfriend2.playAnim('singDOWNmiss', true);
+						case 6:
+							boyfriend2.playAnim('singRIGHTmiss', true);
+					}	
+							case 3: // 9k
+								switch (direction)
+					{
+							
+						case 0:
+							boyfriend.playAnim('singLEFTmiss', true);
+						case 1:
+							boyfriend.playAnim('singDOWNmiss', true);
+						case 2:
+							boyfriend.playAnim('singUPmiss', true);
+						case 3:
+							boyfriend.playAnim('singRIGHTmiss', true);
+						case 4:
+							boyfriend.playAnim('singUPmiss', true);
+							boyfriend2.playAnim('singUPmiss', true);
+						case 5:
+							boyfriend2.playAnim('singLEFTmiss', true);
+						case 6:
+							boyfriend2.playAnim('singDOWNmiss', true);
+						case 7:
+							boyfriend2.playAnim('singUPmiss', true);
+						case 8:
+							boyfriend2.playAnim('singRIGHTmiss', true);
+					}	
+									
+						}
 			vocals.volume = 0;
 		}
 	}
@@ -4339,7 +4417,7 @@ class PlayState extends MusicBeatState
 						case 6:
 							boyfriend2.playAnim('singRIGHT', true);
 					}	
-							case 2:
+							case 3:
 								switch (note.noteData)
 					{
 							
