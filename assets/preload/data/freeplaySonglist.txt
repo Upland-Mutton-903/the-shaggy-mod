@@ -11,3 +11,6 @@ Dissasembler:rshaggy:0xFF7149A8
 Astral-calamity:wbshaggy:0xFF9C0079
 Talladega:zshaggy:0xFF686868
 Double Kill:sus:0xFFFF6666
+Sticking:shaggy:0xFF666666
+Fight:shaggy:0xFF666666
+Serious:shaggy:0xFF666666

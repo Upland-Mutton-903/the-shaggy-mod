@@ -1568,7 +1568,8 @@ class ChartingState extends MusicBeatState
 			mustHitSection: true,
 			sectionNotes: [],
 			typeOfSection: 0,
-			altAnim: false
+			altAnim: false,
+			dType: 0
 		};
 
 		_song.notes.push(sec);
@@ -1762,7 +1763,8 @@ class ChartingState extends MusicBeatState
 				mustHitSection: false,
 				bpm: 0,
 				changeBPM: false,
-				altAnim: false
+				altAnim: false,
+				dType: 0
 			};
 			events.push(sex);
 		}

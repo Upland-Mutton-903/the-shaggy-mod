@@ -33,7 +33,8 @@ class StoryMenuState extends MusicBeatState
 		true,	//Week 4
 		true,	//Week 5
 		true,	//Week 6
-		true
+		true,	//Week 7
+		true	//Week 8
 	];
 
 	//It works like this:
@@ -45,6 +46,7 @@ class StoryMenuState extends MusicBeatState
 		['shaggymatt', 'bf', 'gf'],
 		['rshaggy', 'bf', 'gf'],
 		['wbshaggy', 'bf', 'gf'],
+		['', 'bf', 'gf'],
 		['', 'bf', 'gf']
 	];
 
@@ -56,7 +58,8 @@ class StoryMenuState extends MusicBeatState
 		"Cruel revelation",
 		"Bonus match",
 		"Special Kombat with the third of his kind",
-		"BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+		"BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+		"sus"
 	];
 
 	//Background asset name, the background files are stored on assets/preload/menubackgrounds/
@@ -67,6 +70,7 @@ class StoryMenuState extends MusicBeatState
 		'boxin',
 		'outside',
 		'lava',
+		'blank',
 		'blank'
 	];
 	
@@ -381,8 +385,8 @@ class StoryMenuState extends MusicBeatState
 		{
 			switch (curWeek)
 			{
-				case 3:
-					CoolUtil.browserLoad('https://gamejolt.com/games/fnf-shaggy-matt/648032');
+				//case 3:
+				//	CoolUtil.browserLoad('https://gamejolt.com/games/fnf-shaggy-matt/648032');
 				case 6:
 					MusicBeatState.switchState(new MASKstate());
 				default:
